@@ -13,11 +13,6 @@ final class SecondViewController: UIViewController {
 
     private weak var delegate = UIApplication.shared.delegate as? AppDelegate
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        slider.value = 0
-    }
-
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         slider.value = delegate?.shareValue ?? 0
