@@ -21,6 +21,6 @@ final class SecondViewController: UIViewController {
 
     @IBAction private func sliderValueChanged(_ sender: UISlider) {
         delegate?.shareValue = sender.value
-        valueLabel.text = String(slider.value)
+        valueLabel.text = String(sender.value)
     }
 }
